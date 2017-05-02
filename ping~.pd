@@ -1,0 +1,14 @@
+#N canvas 0 22 245 168 10;
+#X obj 95 65 hv.osc square;
+#X obj 95 38 sig~;
+#X obj 9 98 *~;
+#X obj 9 66 adenv 10 300;
+#X obj 9 120 outlet~;
+#X obj 95 10 inlet frequency;
+#X obj 9 10 inlet trigger;
+#X connect 0 0 2 0;
+#X connect 1 0 0 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 1;
+#X connect 5 0 1 0;
+#X connect 6 0 3 0;
